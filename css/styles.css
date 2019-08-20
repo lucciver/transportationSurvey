@@ -3,22 +3,53 @@ body {
   height: 100vh;
   background-image: url("../img/bridgeBackground.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .container {
-  background-color: rgba(255,255,255,.25);
+  background-color: rgba(255,255,255,.75);
+  padding-right:2em;
+}
+.intro {
+  font-size: 1.25em;
+  color: rgba(0,35,75,1.0);
+  text-align: center;
+  font-weight: 700;
 }
 h1 {
   text-align: center;
 }
+.borderIcon {
+  width: 100%;
+  border: 1px solid rgba(0,73,153,1.0);
+  border-radius: 4px;
+  margin: 1em;
+  padding: .5em 0;
+}
 .icon {
-  width: 40px;
+  width: 60%;
 }
 .iconFill {
   fill: rgba(0,73,153,1.0);
+}
+.iconTitle {
+  font-size: .8em;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  color: rgba(0,73,153,1.0);
+  padding-left:.5em;
+}
+textarea {
+  width: 100%;
+  margin-top:.5em;
 }
 #workResponses {
   display: none;
 }
 #funResponses {
   display: none;
+}
+.separate {
+  border-bottom:1px solid rgba(0,73,153,1.0);
+  margin: 1em 0;
 }
