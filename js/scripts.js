@@ -12,6 +12,8 @@ $(document).ready(function(){
   $("form#transportationSurvey").submit(function(event){
     event.preventDefault();
 
+    var otherModesWork = $("textarea#otherModesWork").val();
+    var otherModesFun = $("textarea#otherModesFun").val();
 
     $("input:checkbox[name=work-transportation]:checked").each(function(){
       workTransportationMode = $(this).val();
@@ -25,6 +27,9 @@ $(document).ready(function(){
       capitalFunTransportationMode = funTransportationMode.toUpperCase();
       $("ul#responsesFun").append("<li>" + capitalFunTransportationMode + "</li>");
     });
+    $("p#responseOtherModesWork").text(otherModesWork);
+    $("p#responseOtherModesFun").text(otherModesFun);
+    
     $("div#workResponses").show();
 
     $("div#funResponses").show();
